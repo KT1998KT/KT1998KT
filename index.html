@@ -1,12 +1,45 @@
-- 👋 Hi, I’m @KT1998KT
-- 👀 I’m interested in ...
-- 🌱 I’m currently learning ...
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
-
-<!---
-KT1998KT/KT1998KT is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Skin Type Detector</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #fff7e6;
+      text-align: center;
+      padding: 50px;
+    }
+    .box {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      max-width: 400px;
+      margin: auto;
+    }
+    h1 {
+      color: #f4a300;
+    }
+    a {
+      color: #0077cc;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h1>Your Skin Type is:</h1>
+    <h2 id="skinType"></h2>
+    <p><a href="https://www.instagram.com/yuzuunique/" target="_blank">Instagram</a> |
+       <a href="https://youtube.com/@kubratiftikci9647" target="_blank">YouTube</a>
+    </p>
+  </div>
+  <script>
+    const types = ["Dry Skin", "Oily Skin", "Combination Skin", "Sensitive Skin"];
+    const selected = types[Math.floor(Math.random() * types.length)];
+    document.getElementById("skinType").textContent = selected;
+  </script>
+</body>
+</html>
